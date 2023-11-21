@@ -1,0 +1,42 @@
+﻿@model IEFI_aplicacion_web.Models.VistaAnimales
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VistaAnimales</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Alta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Alta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Baja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Baja)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
